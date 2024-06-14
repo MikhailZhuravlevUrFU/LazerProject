@@ -22,28 +22,31 @@ const Header = observer(() => {
                     <a className="nav-item" href="#">УСЛУГИ</a>
                 </div>
 
-                <div className="cart">
-                    <a className="cart-img" href="#"><img src="./img/free-icon-shopping-bag-4903482 1.png" alt="Cart" /></a>
-                </div>
+                <div className="right-section">
+                    {user.isLogin ?
+                        <div className="user">
+                            <span className="btn-user">UserName</span>
+                        </div>
+                        :
+                        <div className="user">
+                            <Link className="btn-user" to={LOGIN_ROUTE}>Войти</Link>
+                        </div>
+                    }
+                    
+                    <div className="cart">
+                        <a className="cart-img" href="#"><img src="./img/free-icon-shopping-bag-4903482 1.png" alt="Cart" /></a>
+                    </div>
 
-                {user.isLogin ?
-                    <div className="user">
-                        <span className="btn-user">UserName</span>
-                    </div>
-                    :
-                    <div className="user">
-                        <Link className="btn-user" to={LOGIN_ROUTE}>Войти</Link>
-                    </div>
-                }
-                {user.isLogin ?
-                    <div className="btn">
-                        <Link className="button-h" to={ADMIN_ROUTE}>ADMIN</Link>
-                    </div>
-                    :
-                    <div className="btn">
-                        <a className="button-h" href="#">ЗАКАЗАТЬ ЗВОНОК</a>
-                    </div>
-                }
+                    {user.isLogin ?
+                        <div className="btn">
+                            <Link className="button-h" to={ADMIN_ROUTE}>ADMIN</Link>
+                        </div>
+                        :
+                        <div className="btn">
+                            <a className="button-h" href="#">ЗАКАЗАТЬ ЗВОНОК</a>
+                        </div>
+                    }
+                </div>
             </div>
             <div className="headerdown">
 

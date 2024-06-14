@@ -6,11 +6,7 @@ semibold - 600
 bold - 700
 extrabold - 800
 */
-
-
-*{
-
-}
+@import '~bootstrap/dist/css/bootstrap.css';
 
 body{
     background-color: #040C18;
@@ -19,10 +15,7 @@ body{
 
 
 
-
-
 /* HEADER */
-
 
 
 
@@ -50,13 +43,19 @@ body{
     color: #AD67F9;
 }
 
-.button{
+.button-h{
     background-image: linear-gradient(to right, #AD67F9, #E58D86);
     color: #000000;
     text-decoration: none;
     padding: 16px 18px;
     border-radius: 45px; 
     font-weight: 500;
+    width: 185px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .button:hover {
@@ -65,7 +64,7 @@ body{
 
 .cart {
     position: absolute;
-    right: 460px;
+    right: 463px;
 }
 
 .user {

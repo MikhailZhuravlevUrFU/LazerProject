@@ -13,7 +13,7 @@ const AdminHeader = () => {
       <div className="logo">
         <a href="/"><img src="./img/Logo.png" alt="Logo" /></a>
         <span className="logo-admin">
-            ADMIN MODE
+            ADMIN PANEL
         </span>
       </div>
 

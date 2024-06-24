@@ -41,7 +41,7 @@ body{
     text-decoration: none;
     font-weight: 500;
     font-size: 18px;
-    margin-right: 50px;
+    margin-right: 40px;
 
     transition:  color 0.2s linear;
 }
@@ -57,13 +57,6 @@ body{
 .logo {
     flex: 1; 
     align-items: center;
-}
-
-.logo-admin{
-    position: absolute;
-    color:#868686;
-    padding-left: 5px;
-    padding-top: 10px;
 }
 
 .right-section {
@@ -84,6 +77,8 @@ body{
     align-items: center;
     justify-content: center;
     text-align: center;
+    outline: none;
+    border: none;
 }
 
 .button:hover {
@@ -207,6 +202,23 @@ body{
     -webkit-filter: sepia(1) hue-rotate(225deg) saturate(7);
     filter: sepia(1) hue-rotate(225deg) saturate(7);
 }
+
+
+
+
+/*HEADER ADMIN*/
+
+.nav-item.active{
+    color:#9156d1;
+}
+
+.logo-admin{
+    position: absolute;
+    color:#868686;
+    padding-left: 5px;
+    padding-top: 10px;
+}
+
 
 
 
@@ -715,3 +727,143 @@ footer {
 .descript-login .rem {
     margin-right: 80px;
 }
+
+
+
+/*ADMIN-ITEMS*/
+
+.container-items {
+    width:1430px;
+    margin-left: 240px;
+}
+
+.btn-admin-panel {
+    background-image: linear-gradient(to right, #6B6B6B, #6B6B6B);
+    border-radius: 20px;
+    color:#000000;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    margin-left: 1245px;
+    margin-top: 70px;
+    height: 40px;
+    width: 180px;
+}
+
+.btn-admin-panel:hover{
+    background-image: linear-gradient(to right, #464646, #464646);
+    color:#b1b1b1;
+}
+
+.block {
+    margin-top: 70px;
+    width:1430px; 
+    height:70px;
+    background-color: #464646;
+    color:#ffffff;
+    display: flex;
+    align-items: center;
+}
+
+.block span {
+    margin-left: 50px;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+padding: 10px;
+text-align: center;
+color: #ffffff;
+background-color: #040C18;
+vertical-align: middle;
+}
+
+.table .specifications  {
+    text-align: left;
+    max-width: 200px;
+}
+
+.specifications {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.table th {
+background-color: #040C18;
+}
+
+.table tbody tr:hover {
+background-color: #777777;
+}
+
+.table .btn-edit {
+background-color: #888888;
+border: none;
+color: #000000;
+padding: 5px 10px;
+cursor: pointer;
+}
+
+.table .btn-edit:hover {
+background-color: #555555;
+}
+
+/* Items Add */
+
+.TitleAddItem{
+    margin-left: 280px;
+}
+
+.placeholder-add-item {
+    margin-top: 20px;
+}
+
+.footer-add-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button-add-item {
+    background-color: transparent;
+    color: #000000;
+    text-decoration: none;
+    padding: 16px 18px;
+    border-radius: 45px; 
+    font-weight: 500;
+    width: 185px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-color: #000000;
+}
+
+.button-add-item:hover {
+    background-image: linear-gradient(to right, #AD67F9, #E58D86);
+    border:none;
+}
+
+/* MAIN ADMIN PANEL */
+
+.avatar-admin-main {
+    margin-top: 150px;
+    margin-left: -10px;
+}
+
+.container-main-admin {
+    width:1430px;
+    margin-left: 240px;
+}
+
+
+
